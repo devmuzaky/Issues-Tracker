@@ -18,15 +18,13 @@ export class IssueReportComponent implements OnInit {
 
   ngOnInit(): void {
     this.issueForm = this.fb.group({
-      title: [''],
-      description: [''],
-      priority: [''],
-      type: ['']
+      title: [''], description: [''], priority: [''], type: ['']
     });
   }
 
   addIssue() {
     this.issueService.createIssue(this.issueForm?.value);
+    this.formClose.emit();
   }
 
 }

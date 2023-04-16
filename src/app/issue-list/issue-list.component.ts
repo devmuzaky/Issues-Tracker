@@ -10,14 +10,22 @@ import {Issue} from "../models/issue";
 export class IssueListComponent implements OnInit {
 
   issues: Issue[] = [];
-  constructor(private issuesService: IssuesService) { }
+  showReportIssue: boolean = false;
 
-  private getIssues(){
-    this.issues = this.issuesService.getPendingIssues();
+  constructor(private issuesService: IssuesService) {
   }
 
   ngOnInit(): void {
     this.getIssues();
+  }
+
+  onCloseReportIssue() {
+    this.showReportIssue = false;
+    this.getIssues();
+  }
+
+  private getIssues() {
+    this.issues = this.issuesService.getPendingIssues();
   }
 
 }
