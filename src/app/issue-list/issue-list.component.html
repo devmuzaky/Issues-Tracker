@@ -1,4 +1,4 @@
-<ng-container *ngIf="showReportIssue === false">
+<ng-container class="container" *ngIf="showReportIssue === false">
 
   <button (click)="showReportIssue = true" class="btn btn-primary">Add new issue</button>
 
@@ -16,12 +16,12 @@
         <button (click)="selectedIssue= issue" class="action-item">Resolve</button>
       </clr-dg-action-overflow>
 
-      <clr-dg-cell>{{issue.issueNo}}</clr-dg-cell>
+      <clr-dg-cell class="issue-num-data" >{{issue.issueNo}}</clr-dg-cell>
       <clr-dg-cell>{{issue.type}}</clr-dg-cell>
       <clr-dg-cell>{{issue.title}}</clr-dg-cell>
-      <clr-dg-cell>{{issue.description}}</clr-dg-cell>
+      <clr-dg-cell class="description" >{{issue.description}}</clr-dg-cell>
       <clr-dg-cell>
-        <span [class.label-danger]="issue.priority === 'high'" class="label">{{issue.priority}}</span>
+        <span [class.label-danger]="issue.priority === 'high'" class="label priority-text">{{issue.priority}}</span>
       </clr-dg-cell>
 
     </clr-dg-row>

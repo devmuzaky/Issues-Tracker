@@ -1,0 +1,32 @@
+.header-6 {
+  background: #093d58;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 3rem;
+}
+
+.branding {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 0 0 1em;
+  display: inline-block;
+  line-height: 3em;
+  height: 3em;
+  text-align: center;
+}
+
+.nav-text {
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}

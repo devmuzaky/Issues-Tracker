@@ -4,21 +4,21 @@ export const issues: Issue[] = [
   {
     issueNo: 1,
     title: 'Add email validation in registration form',
-    description: 'Validate the email entered in the user registration form',
+    description: 'Validate the email entered in the user registration',
     priority: 'high',
     type: 'Feature'
   },
   {
     issueNo: 2,
     title: 'Display the adress details of a customer',
-    description: 'Add a column to display the details of the customer address',
+    description: 'Add a column to display the details of the customer',
     priority: 'low',
     type: 'Feature'
   },
   {
     issueNo: 3,
     title: 'Export to CSV is not working',
-    description: 'The export process of a report into CSV format throws an error',
+    description: 'The export process of a report into CSV format',
     priority: 'high',
     type: 'Bug'
   },
@@ -32,28 +32,28 @@ export const issues: Issue[] = [
   {
     issueNo: 5,
     title: 'Add new customer tutorial',
-    description: 'Create a tutorial on how to add a new customer into the application',
+    description: 'Create a tutorial on how to add a new customer',
     priority: 'high',
     type: 'Documentation'
   },
   {
     issueNo: 6,
     title: 'improve search functionality',
-    description: 'Implement a more advanced search functionality with options to filter results',
+    description: 'Implement a more advanced search functionality ',
     priority: 'high',
     type: 'Feature'
   },
   {
     issueNo: 7,
     title: 'Fix alignment issues on mobile devices',
-    description: 'The layout of some pages is not displaying correctly on smaller mobile devices',
+    description: 'The layout of some pages is not displaying correctly',
     priority: 'low',
     type: 'Bug'
   },
   {
     issueNo: 8,
     title: 'Add pagination to results page',
-    description: 'When a large number of results are displayed, implement pagination ',
+    description: 'When a large number of results are displayed, implement ',
     priority: 'high',
     type: 'Feature'
   },
@@ -67,7 +67,7 @@ export const issues: Issue[] = [
   {
     issueNo: 10,
     title: 'Upgrade to latest version of framework',
-    description: 'Upgrade the application to use the latest version of the chosen framework',
+    description: 'Upgrade the application to use the latest version',
     priority: 'high',
     type: 'Feature'
   }

@@ -1,6 +1,7 @@
 .datagrid-column {
   font-size: 18px;
   text-align: center;
+
 }
 
 
@@ -10,38 +11,49 @@
   font-weight: 500;
   border: 0.2px solid rgba(224, 224, 224, 0.08);
   border-bottom: none;
+  line-height: 1.5;
+
 }
 
 .description {
   font-size: 18px;
-  width: calc(100vw - 1000px);
+  width: calc(100vw - 1020px);
+  min-width: 600px
 }
 
 .issue-number {
   font-size: 18px;
   width: 140px;
+  min-width: 140px;
+
 }
 
 .type {
   font-size: 18px;
   width: 220px;
+  min-width: 220px;
+
 }
 
 .priority {
   font-size: 18px;
-  width: 20px !important;
+  max-width: 80px !important;
+  width: 80px !important;
 }
 
-.label {
+.priority-text {
   font-size: 14px;
   font-weight: bold;
   width: 80px;
+  min-width: 80px;
 }
+
 
 
 .title {
   font-size: 18px;
   width: 410px;
+  min-width: 410px;
 }
 
 
@@ -71,4 +83,8 @@
 
 ::ng-deep .datagrid-action-overflow {
   background: #0a5572 !important;
+}
+
+.issue-num-data {
+  text-align: center;
 }
