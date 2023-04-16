@@ -1,0 +1,43 @@
+<h3>Report an issue</h3>
+<form (ngSubmit)="addIssue()" *ngIf="issueForm" [formGroup]="issueForm" clrForm>
+
+  <clr-input-container>
+    <label>Title</label>
+    <input clrInput formControlName="title"/>
+  </clr-input-container>
+
+  <clr-textarea-container>
+    <label>Description</label>
+    <textarea clrTextarea formControlName="description"></textarea>
+  </clr-textarea-container>
+
+  <clr-radio-container clrInline>
+    <label>Priority</label>
+
+    <clr-radio-wrapper>
+      <input clrRadio formControlName="priority" type="radio" value="low"/>
+      <label>Low</label>
+    </clr-radio-wrapper>
+
+    <clr-radio-wrapper>
+      <input clrRadio formControlName="priority" type="radio"
+             value="high"/>
+      <label>High</label>
+    </clr-radio-wrapper>
+
+  </clr-radio-container>
+
+  <clr-select-container>
+    <label>Type</label>
+    <select clrSelect formControlName="type">
+      <option value="Feature">Feature</option>
+      <option value="Bug">Bug</option>
+      <option value="Documentation">Documentation
+      </option>
+    </select>
+  </clr-select-container>
+
+  <button class="btn btn-primary" type="submit">
+    Create
+  </button>
+</form>
