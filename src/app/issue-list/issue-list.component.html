@@ -4,18 +4,16 @@
 
   <clr-datagrid>
 
-    <clr-dg-column [clrDgColType]="'number'" [clrDgField]="'issueNo'">Issue No</clr-dg-column>
-    <clr-dg-column [clrDgField]="'type'">Type</clr-dg-column>
-    <clr-dg-column [clrDgField]="'title'">Title</clr-dg-column>
-    <clr-dg-column [clrDgField]="'description'">Description</clr-dg-column>
-    <clr-dg-column [clrDgField]="'priority'">Priority</clr-dg-column>
+    <clr-dg-column [clrDgColType]="'number'" [clrDgField]="'issueNo'" class="issue-number">Issue No</clr-dg-column>
+    <clr-dg-column [clrDgField]="'type'" class="type">Type</clr-dg-column>
+    <clr-dg-column [clrDgField]="'title'" class="title">Title</clr-dg-column>
+    <clr-dg-column [clrDgField]="'description'" class="description">Description</clr-dg-column>
+    <clr-dg-column [clrDgField]="'priority'" class="priority">Priority</clr-dg-column>
 
     <clr-dg-row *clrDgItems="let issue of issues">
 
       <clr-dg-action-overflow>
         <button (click)="selectedIssue= issue" class="action-item">Resolve</button>
-        <button (click)="selectedIssue= issue" class="action-item">Edit</button>
-        <button (click)="selectedIssue= issue" class="action-item">Delete</button>
       </clr-dg-action-overflow>
 
       <clr-dg-cell>{{issue.issueNo}}</clr-dg-cell>
@@ -36,4 +34,4 @@
 <app-issue-report (formClose)="onCloseReportIssue()" *ngIf="showReportIssue == true"></app-issue-report>
 
 <app-confirm-dialog (confirm)="onConfirm($event)" *ngIf="selectedIssue"
-                    [issueNo]="selectedIssue?.issueNo"></app-confirm-dialog>
+                    [issueNo]="selectedIssue.issueNo"></app-confirm-dialog>

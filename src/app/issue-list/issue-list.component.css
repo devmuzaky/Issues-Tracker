@@ -1,0 +1,74 @@
+.datagrid-column {
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.datagrid-cell {
+  font-size: 20px;
+  font-family: Ubuntu, sans-serif !important;
+  font-weight: 500;
+  border: 0.2px solid rgba(224, 224, 224, 0.08);
+  border-bottom: none;
+}
+
+.description {
+  font-size: 18px;
+  width: calc(100vw - 1000px);
+}
+
+.issue-number {
+  font-size: 18px;
+  width: 140px;
+}
+
+.type {
+  font-size: 18px;
+  width: 220px;
+}
+
+.priority {
+  font-size: 18px;
+  width: 20px !important;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  width: 80px;
+}
+
+
+.title {
+  font-size: 18px;
+  width: 410px;
+}
+
+
+::ng-deep button:focus {
+  outline: none;
+}
+
+::ng-deep .sort-icon {
+  font-size: larger;
+  color: #00fffb !important;
+
+}
+
+
+::ng-deep .datagrid-filter {
+  background: #0a5572;
+  border-style: none;
+}
+
+::ng-deep .datagrid-numeric-filter-input {
+  width: 120px !important;
+}
+
+::ng-deep .datagrid-fixed-width datagrid-cell {
+  width: 100px !important;
+}
+
+::ng-deep .datagrid-action-overflow {
+  background: #0a5572 !important;
+}
