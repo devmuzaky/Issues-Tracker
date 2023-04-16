@@ -4,6 +4,7 @@
   <clr-input-container>
     <label>Title</label>
     <input clrInput formControlName="title"/>
+    <clr-control-error>Title is required</clr-control-error>
   </clr-input-container>
 
   <clr-textarea-container>
@@ -20,11 +21,10 @@
     </clr-radio-wrapper>
 
     <clr-radio-wrapper>
-      <input clrRadio formControlName="priority" type="radio"
-             value="high"/>
+      <input clrRadio formControlName="priority" type="radio" value="high"/>
       <label>High</label>
     </clr-radio-wrapper>
-
+    <clr-control-error>Priority is required</clr-control-error>
   </clr-radio-container>
 
   <clr-select-container>
@@ -35,6 +35,7 @@
       <option value="Documentation">Documentation
       </option>
     </select>
+    <clr-control-error>Type is required</clr-control-error>
   </clr-select-container>
 
   <button class="btn btn-primary" type="submit">Create</button>
